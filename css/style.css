@@ -1,0 +1,437 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 80px;
+    background-color: #252934
+}
+a {
+    text-decoration: none;
+}
+
+section{
+    scroll-margin-top: 70px;
+}
+
+.pperfil{
+    float:left;
+position: relative;
+font-size: 23px;
+    color:#e31b6d;
+    font-weight: bold
+}
+.sperfil{
+position: absolute;
+right: 0;
+width: 0;
+background: #2c3e50;
+animation: maquina 5s infinite alternate;
+}
+
+@keyframes maquina{
+    from{
+        width: 100%;
+
+    }
+    to{
+        width: 0;
+    }
+}
+.perfil{
+    
+    background-color: #2c3e50;
+    display:flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.perfil-img{
+    align-items: left;
+    padding: 80px 0 0 10px;
+}
+.perfil-info{
+    text-align: right;
+    padding: 100px;
+    color: white;
+}
+h1{
+font-size: 50px;
+font-weight: bold;
+margin: 0;
+}
+
+h3{
+    font-size: 30px;
+    color:#e31b6d;
+    font-weight: bold;
+    text-align: center;
+}
+
+p{
+    font-size: 25px;
+    color:#e31b6d;
+    font-weight: bold; 
+}
+.habilidades-titulo{
+    font-size: 50px;
+    color: white;
+    padding-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.habilidades-icono{
+width: 150px;
+height: 150px;
+}
+
+
+.contacto{
+    background-color: #2c3e50;
+    padding: 30px;
+    margin: 0;
+    
+}
+.contacto-titulo{
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #2c3e50;
+    padding: 0;
+    margin: 0;
+}
+.contactos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.pcmensaje{
+    text-align: center;
+}
+.mapa{
+    width:100%; 
+    height:100%;
+    text-align: center;
+    align-items: center;
+    
+}
+iframe{
+    
+    text-align: center;
+    align-items: center;
+}
+.separadorup{
+    padding: 0;
+    margin: 0;
+}
+/*barra de navegacion*/
+header{
+    position: fixed;
+    background-color: #1b242f;
+    box-shadow: 0 4px 5px #04c2c9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+.menu li{
+    padding: 0 15px;
+}
+.menu a{
+    font-size: 18 px;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+}
+.abrir-menu, .cerrar-menu{
+    color:white;
+    background: none;
+    border: none;
+}
+
+.fContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.habilidades-listaf{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.habilidades-listab{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#nombre, #email, #mensaje{
+    width: 500px;
+    height: 25px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+#mensaje{
+    height: 340px;
+    overflow: scroll;
+    resize: none;
+}
+#btn-enviar{
+    font-size: 20px;
+    padding: 0.5em 1em;
+    
+}
+#iconoInstagram, #iconoFacebook, #iconoLinked{
+    font-size: 30px;
+    padding:10px 20px;
+    color: white;
+    
+}
+footer{
+    text-align: center;
+}
+@media (min-width:960px){
+   
+    .abrir-menu, .cerrar-menu{ 
+        display:none;
+    }
+
+    
+}
+@media (min-width:501px) and (max-width:959px){
+    
+
+    .abrir-menu, .cerrar-menu{ 
+        display:none;
+    }
+    .perfil{
+    
+        background-color: #2c3e50;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-emphasis: center;
+        ;
+        
+    }
+    
+    .perfil-img{
+        align-items: center;
+        padding: 0 0 0 10px;
+    }
+    .perfil-info{
+        text-align: right;
+        padding: 10px;
+        color: white;
+    }
+    h1{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    }
+    .pperfil{
+        
+    font-size: 16px;
+    }
+    .habilidades-listaf{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .habilidades-listab{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    .habilidades-titulo{
+        font-size: 25px;
+        
+        padding-bottom: 30px;
+        
+    }
+    
+    
+    .habilidades-icono{
+    width: 80px;
+    height: 80px;
+    }
+    .mapa{
+        overflow:hidden;
+        
+        height:0;
+    
+    }
+    
+    .mapa{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        
+    }
+    #nombre, #email, #mensaje{
+        width: 400px;
+        height: 25px;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    #mensaje{
+        height: 340px;
+        
+    }
+    #btn-enviar{
+        font-size: 20px;
+        padding: 0.5em 1em;
+}
+.contacto-titulo{
+    font-size: 25px;
+    
+}
+h3{
+    font-size: 20px;
+    
+}
+}
+
+@media (max-width:500px) {
+    
+    .menu{
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        background-color:  #333333;
+        overflow-y: auto;
+        opacity: 0;
+        pointer-events: none;
+        transition:opacity 0.3s;
+        }
+    .menu li{
+        padding: 0;
+            }
+    .menu a{
+        line-height: 60px;
+            }
+    .abrir-menu, .cerrar-menu { 
+            display:block;
+            cursor: pointer;
+            
+            }
+    .cerrar-menu{
+        align-self: flex-end;
+    }
+    .abrir_menu{
+        opacity: 1;
+        pointer-events: all;
+    }
+    .perfil{
+    
+        background-color: #2c3e50;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-emphasis: center;
+        ;
+        
+    }
+    .imgperfil{
+        width: 100%;
+        height: 100%;
+    }
+    .perfil-img{
+        width: 232px;
+        height: 238px;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .perfil-info{
+        text-align: right;
+        padding: 10px;
+        color: white;
+    }
+    h1{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    }
+    .pperfil{
+        
+    font-size: 16px;
+        
+    }
+    .habilidades-titulo{
+        font-size: 25px;
+        
+        padding-bottom: 30px;
+        
+    }
+    
+    
+    .habilidades-icono{
+    width: 50px;
+    height: 50px;
+    }
+    h3{
+        font-size: 20px;
+        
+    }
+    #nombre, #email, #mensaje{
+        width: 100%;
+        height: 20px;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    #mensaje{
+        height: 150px;
+        overflow: scroll;
+        resize: none;
+    }
+    #btn-enviar{
+        font-size: 15px;
+        padding: 0.5em 1em;
+    }
+    .contacto-titulo{
+        font-size: 25px;
+        
+    }
+    
+    
+    .mapa{
+        overflow:hidden;
+        
+        height:0;
+    
+    }
+    
+    .mapa{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facundo Silva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/60e734222d.js" crossorigin="anonymous"></script>
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#inicio" class="logo">
+                <img src="img/firma3t.png" alt="">
+            </a>
+            <button class="abrir-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="menu">
+                <button class="cerrar-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <li><a href="#inicio" class="linkmenu1">Inicio</a></li>
+                <li><a href="#habilidades" class="linkmenu2">Habilidades</a></li>
+                <li><a href="#contacto" class="linkmenu3">Contacto</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <section class="perfils" id="inicio">
+            
+            <div class="perfil">
+            <div class="perfil-info">
+                <h1>Hola, soy <br>Facundo Silva</h1>
+                <p class="pperfil">Futuro Programador Full Stack<span class="sperfil">&#160</span></p>
+            </div>
+            <div class="perfil-img">
+                <img src="img/yo.png" alt="" class="imgperfil">
+            </div>
+            </div>
+            <img src="img/waveup.svg" class="separadorup">
+        </section>
+
+        <section class="habilidadess" id="habilidades">
+            
+            <div class="habilidades">
+            <h2 class="habilidades-titulo">Habilidades</h2>
+            <div class="frontend">
+            <h3 class="pfront">FrontEnd</h3>
+            <ul class="habilidades-listaf">
+                <li><img src="img/iconohtml.svg" class="habilidades-icono"></li>
+                <li><img src="img/iconocss3.svg" class="habilidades-icono"></li>
+                <li><img src="img/iconojavascript.svg" class="habilidades-icono"></li>
+                <li><img src="img/iconobootstrap.svg" class="habilidades-icono"></li>
+                <li><img src="img/iconovuejs.svg" class="habilidades-icono"></li>
+            </ul>
+            </div>
+            <div class="backend">
+            <h3 class="pback">BackEnd</h3>    
+            <ul class="habilidades-listab">
+                <li><img src="img/iconsomysql.svg" class="habilidades-icono"></li>
+                <li><img src="img/iconopython.svg" class="habilidades-icono"></li>
+            </ul>
+            </div>
+             </div>
+             
+        </section>
+        <section class="contactos" id="contacto">
+            <img src="img/wavedown.svg" class="separadorup">
+            <h2 class="contacto-titulo">Contacto</h2>
+            <div class="contacto">
+            <p class="pcmensaje">Mandame un mensaje</p>
+            <form action="https://formspree.io/f/mgeddyww" method="POST" class="fContacto" onsubmit="return validacion()">
+                <input type="text"  name="nombre"  placeholder="Nombre" id="nombre">
+                <input type="email" name="email" placeholder="Email" id="email">
+                <textarea name="mensaje" placeholder="Mensaje" id="mensaje"></textarea>
+                <button type="submit" id="btn-enviar" onclick="validacion()">Enviar</button>
+          </form>
+          <p class="pcmensaje">Visitame en:</p>
+          <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5401.6502382362205!2d-61.04922049203494!3d-33.71479885310157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sar!4v1653713784657!5m2!1ses!2sar"  style="border:0;" width="500"  height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+        </section>
+       
+        
+    </main>
+    <footer>
+        <a href="https://www.instagram.com/facundo.h.silva/"  ><i class="fa-brands fa-instagram" id="iconoInstagram" ></i></a>
+        <a href="https://www.facebook.com/silva.facu" ><i class="fa-brands fa-facebook" id="iconoFacebook"></i></a>
+        <a href="https://www.linkedin.com/in/silvafacu" ><i class="fa-brands fa-linkedin"  id="iconoLinked"></i></a>
+    </footer>
+</body>
+</html>
